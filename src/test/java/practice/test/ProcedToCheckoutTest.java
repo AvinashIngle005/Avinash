@@ -22,7 +22,6 @@ public class ProcedToCheckoutTest extends BasePage {
 				input.get("secondProduct")};
 		searchProduct.searchProduct(input.get("search"));
 		searchProduct.getSearchResults(input.get("search"));
-		Assert.assertTrue(false);
 		searchProduct.selectAndAddToCart(names);
 		VerifyCartItems verifyCartItems = searchProduct.goToCart();
 		Assert.assertTrue(verifyCartItems.verifyCartItems(names));
