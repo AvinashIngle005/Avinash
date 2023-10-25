@@ -37,7 +37,6 @@ public class Listener extends BasePage implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		extentTest.get().fail(result.getThrowable());
-		
 	}
 
 	@Override

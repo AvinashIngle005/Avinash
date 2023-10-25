@@ -5,11 +5,16 @@
     <listener class-name="Practice.CommonUtility.Listener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
       <class name="practice.test.ProcedToCheckoutTest">
         <methods>
-          <include name="submitOrder" invocation-numbers="0 1"/>
           <include name="launchApplication"/>
+          <include name="verifyProductDisplayed" invocation-numbers="0 1"/>
           <include name="closeWindow"/>
         </methods>
       </class> <!-- practice.test.ProcedToCheckoutTest -->

@@ -5,8 +5,8 @@
     <classes>
       <class name="practice.test.ProcedToCheckoutTest">
         <methods>
-          <include name="submitOrder" invocation-numbers="1"/>
           <include name="launchApplication"/>
+          <include name="verifyProductDisplayed" invocation-numbers="0 1"/>
           <include name="closeWindow"/>
         </methods>
       </class> <!-- practice.test.ProcedToCheckoutTest -->

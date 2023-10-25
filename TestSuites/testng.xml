@@ -4,9 +4,22 @@
 <listeners>
 <listener class-name="Practice.CommonUtility.Listener"></listener>
 </listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test1">
     <classes>
-      <class name="practice.test.ProcedToCheckoutTest"/>
+      <class name="practice.test.ProcedToCheckoutTest">
+		  <methods>
+			  <include name="verifyProductDisplayed"></include>
+		  </methods>
+		  </class>
+    </classes>
+    </test>
+     <test thread-count="5" name="Test2">
+    <classes>
+      <class name="practice.test.VerifySearchTextBox">
+		  <methods>
+			  <include name="textBox"></include>
+		  </methods>
+		  </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -42,15 +42,24 @@ public class SearchProduct extends CommonUtility {
 
 	@FindBy(css = ("#nav-cart"))
 	WebElement cartIcon;
-
+	
 	By product = By.xpath("//div[contains(@class,'s-card-container')]");
 
 	By suggestions = By.xpath("//div[@id='nav-flyout-searchAjax']//div[@class='s-suggestion-container']");
-
+	
 	public void searchProduct(String product) throws IOException {
 		waitUntilVisibilityOf(searchBox);
 		searchBox.sendKeys(product);
 		takeScreenShot();
+	}
+	
+	public boolean verifySearchTextField() {
+		return searchBox.isDisplayed();
+	}
+	
+	public boolean verifySearchAcceptsText(String search) throws InterruptedException {
+		searchBox.sendKeys(search);
+		return searchBox.isEnabled();
 	}
 
 	public void getSearchResults(String search) {
@@ -58,6 +67,14 @@ public class SearchProduct extends CommonUtility {
 		WebElement searchResult = suggestion.stream().filter(s -> s.getText().equalsIgnoreCase(search)).findFirst()
 				.get();
 		searchResult.click();
+	}
+	
+	public boolean verifyProductIsPresent(String search, String productMatch) throws InterruptedException {
+		List<WebElement> allProducts = getProducts();
+//		WebElement Product = allProducts.stream().filter(product -> product.getText().equalsIgnoreCase(productMatch))
+//				.findFirst().get();
+		return allProducts.stream().anyMatch(product->product.getText().equalsIgnoreCase(productMatch));
+		
 	}
 
 	public List<WebElement> getProducts() throws InterruptedException {

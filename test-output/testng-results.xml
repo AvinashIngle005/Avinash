@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-25T10:58:21 IST" name="Suite" finished-at="2023-10-25T10:59:53 IST" duration-ms="91284">
+  <suite started-at="2023-10-25T14:35:58 IST" name="Suite" finished-at="2023-10-25T14:36:34 IST" duration-ms="36661">
     <groups>
+      <group name="regression">
+        <method signature="VerifySearchTextBox.textBox()[pri:0, instance:practice.test.VerifySearchTextBox@53de625d]" name="textBox" class="practice.test.VerifySearchTextBox"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="ProcedToCheckoutTest.verifyProductDisplayed(java.util.HashMap)[pri:0, instance:practice.test.ProcedToCheckoutTest@22f31dec]" name="verifyProductDisplayed" class="practice.test.ProcedToCheckoutTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-10-25T10:58:21 IST" name="Test" finished-at="2023-10-25T10:59:53 IST" duration-ms="91284">
+    <test started-at="2023-10-25T14:35:58 IST" name="Test1" finished-at="2023-10-25T14:36:27 IST" duration-ms="29791">
       <class name="practice.test.ProcedToCheckoutTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:practice.test.ProcedToCheckoutTest@63fbfaeb]" started-at="2023-10-25T10:58:22 IST" name="launchApplication" finished-at="2023-10-25T10:58:33 IST" duration-ms="10883" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:practice.test.ProcedToCheckoutTest@22f31dec]" started-at="2023-10-25T14:35:58 IST" name="launchApplication" finished-at="2023-10-25T14:36:06 IST" duration-ms="7908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:practice.test.ProcedToCheckoutTest@63fbfaeb]" started-at="2023-10-25T10:58:33 IST" name="submitOrder" data-provider="getData" finished-at="2023-10-25T10:58:56 IST" duration-ms="23801" status="PASS">
+        <test-method signature="verifyProductDisplayed(java.util.HashMap)[pri:0, instance:practice.test.ProcedToCheckoutTest@22f31dec]" started-at="2023-10-25T14:36:06 IST" name="verifyProductDisplayed" data-provider="getData" finished-at="2023-10-25T14:36:14 IST" duration-ms="8278" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,16 +27,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeWindow()[pri:0, instance:practice.test.ProcedToCheckoutTest@63fbfaeb]" started-at="2023-10-25T10:58:56 IST" name="closeWindow" finished-at="2023-10-25T10:59:01 IST" duration-ms="4287" status="PASS">
+        </test-method> <!-- verifyProductDisplayed -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:practice.test.ProcedToCheckoutTest@22f31dec]" started-at="2023-10-25T14:36:14 IST" name="closeWindow" finished-at="2023-10-25T14:36:15 IST" duration-ms="485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:practice.test.ProcedToCheckoutTest@63fbfaeb]" started-at="2023-10-25T10:59:01 IST" name="launchApplication" finished-at="2023-10-25T10:59:09 IST" duration-ms="8366" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:practice.test.ProcedToCheckoutTest@22f31dec]" started-at="2023-10-25T14:36:15 IST" name="launchApplication" finished-at="2023-10-25T14:36:21 IST" duration-ms="6373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:practice.test.ProcedToCheckoutTest@63fbfaeb]" started-at="2023-10-25T10:59:09 IST" name="submitOrder" data-provider="getData" finished-at="2023-10-25T10:59:48 IST" duration-ms="39322" status="PASS">
+        <test-method signature="verifyProductDisplayed(java.util.HashMap)[pri:0, instance:practice.test.ProcedToCheckoutTest@22f31dec]" started-at="2023-10-25T14:36:21 IST" name="verifyProductDisplayed" data-provider="getData" finished-at="2023-10-25T14:36:27 IST" duration-ms="5872" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,12 +46,28 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeWindow()[pri:0, instance:practice.test.ProcedToCheckoutTest@63fbfaeb]" started-at="2023-10-25T10:59:48 IST" name="closeWindow" finished-at="2023-10-25T10:59:53 IST" duration-ms="4116" status="PASS">
+        </test-method> <!-- verifyProductDisplayed -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:practice.test.ProcedToCheckoutTest@22f31dec]" started-at="2023-10-25T14:36:27 IST" name="closeWindow" finished-at="2023-10-25T14:36:27 IST" duration-ms="328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->
       </class> <!-- practice.test.ProcedToCheckoutTest -->
-    </test> <!-- Test -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-10-25T14:36:28 IST" name="Test2" finished-at="2023-10-25T14:36:34 IST" duration-ms="6195">
+      <class name="practice.test.VerifySearchTextBox">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:practice.test.VerifySearchTextBox@53de625d]" started-at="2023-10-25T14:36:28 IST" name="launchApplication" finished-at="2023-10-25T14:36:34 IST" duration-ms="5849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="textBox()[pri:0, instance:practice.test.VerifySearchTextBox@53de625d]" started-at="2023-10-25T14:36:34 IST" name="textBox" finished-at="2023-10-25T14:36:34 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textBox -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:practice.test.VerifySearchTextBox@53de625d]" started-at="2023-10-25T14:36:34 IST" name="closeWindow" finished-at="2023-10-25T14:36:34 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- practice.test.VerifySearchTextBox -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>

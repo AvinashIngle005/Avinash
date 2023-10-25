@@ -20,9 +20,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
 public class CommonUtility {
 	WebDriver driver;
 	WebDriverWait wait;
@@ -38,6 +35,7 @@ public class CommonUtility {
 		prop.load(fis);
 		String url = prop.getProperty("url");
 		driver.get(url);
+
 	}
 
 	public void waitUntilVisibilityOf(WebElement webElement) {
@@ -70,11 +68,12 @@ public class CommonUtility {
 	}
 
 	public void takeScreenShot() throws IOException {
-		Random random=new Random();
+		Random random = new Random();
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File file = ts.getScreenshotAs(OutputType.FILE);
-		File ss = new File(System.getProperty("user.dir") + "\\Results\\Run\\ScreenShot"+random.nextInt(10000)+".png");
+		File ss = new File(
+				System.getProperty("user.dir") + "\\Results\\Run\\ScreenShot" + random.nextInt(10000) + ".png");
 		FileUtils.copyFile(file, ss);
-		
+
 	}
 }
